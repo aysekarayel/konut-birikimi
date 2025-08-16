@@ -71,13 +71,11 @@ with left:
     st.subheader("Özet")
     st.json(summary)
 
-with right:
-    st.subheader("Satın Alım Günlüğü (İlk 200 Satır)")
-    st.dataframe(df.head(200), use_container_width=True, height=500)
+
 
 st.subheader("Zaman İçinde Toplam Daire Sayısı")
 if not df.empty:
-    # türev: MonthIndex'e göre units
+    
     plot_df = df[["MonthIndex", "TotalUnitsAfterPurchase"]].rename(columns={"TotalUnitsAfterPurchase":"Toplam Daire"})
     st.line_chart(plot_df.set_index("MonthIndex"))
 else:
