@@ -68,7 +68,7 @@ summary, df = simulate(start_age, end_age, monthly_saving, unit_price, monthly_r
 
 left, right = st.columns([1,1])
 with left:
-    st.subheader("Özet")
+    st.subheader("Sonuç")
     st.json(summary)
 
 
