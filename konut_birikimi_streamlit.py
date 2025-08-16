@@ -5,11 +5,7 @@ import pandas as pd
 st.set_page_config(page_title="Konut Birikimi Simülasyonu", layout="wide")
 
 st.title("🏠 Konut Birikimi ve Rezidans Yatırım Simülasyonu")
-st.markdown("""
-Bu araç, her ay **birikim + kiralar** ile biriken nakdin, **peşinat eşiğine** ulaştığında
-yeni bir daire alınmasını ve sıfır faizli kredi taksitlerinin 15 yıla bölünmesini simüle eder.
-Kira, enflasyona göre **arttırılmamıştır** (sabit varsayım).
-""")
+
 
 with st.sidebar:
     st.header("Parametreler")
