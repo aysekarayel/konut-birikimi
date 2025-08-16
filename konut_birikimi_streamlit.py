@@ -54,14 +54,14 @@ def simulate(start_age, end_age, monthly_saving, unit_price, monthly_rent, down_
     total_monthly_loan_payment = monthly_loan_payment * len(active_loans)
     net_monthly_cashflow_at_end = monthly_saving + monthly_rent_income - total_monthly_loan_payment
 
-    summary = {
+    summary = 
         "Toplam Daire Sayısı": units,
         "Bitiş Yaşı Aylık Kira Geliri (₺)": round(monthly_rent_income, 2),
         "Aktif Kredi Sayısı": len(active_loans),
         "Tek Daire Aylık Kredi Ödemesi (₺)": round(monthly_loan_payment, 2),
         "Toplam Aylık Kredi Ödemesi (₺)": round(total_monthly_loan_payment, 2),
         "Bitiş Yaşı Aylık Net Nakit Akışı (₺)": round(net_monthly_cashflow_at_end, 2),
-    }
+    
     return summary, pd.DataFrame(log)
 
 summary, df = simulate(start_age, end_age, monthly_saving, unit_price, monthly_rent, down_payment_rate, loan_years)
