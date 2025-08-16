@@ -4,7 +4,7 @@ import pandas as pd
 
 st.set_page_config(page_title="Konut Birikimi Simülasyonu", layout="wide")
 
-st.title("🏠 Konut Birikimi ve Rezidans Yatırım Simülasyonu")
+st.title("Konut Yatırım Simülasyonu")
 
 
 with st.sidebar:
